@@ -19,19 +19,7 @@ export default function EditProfileForm() {
      email: "john-snow@gmail.com",
      about: "...",
    })
-  // Initial data (from fetch, etc.)
-  // let profile = {
-  //   username: "john-snow",
-  //   email: "john-snow@gmail.com",
-  //   about: "...",
-  // }
-  // let [inputs, setInputs] = useState({
-  //   username: profile.username,
-  //   email: profile.email,
-  //   about: profile.about,
-  // })
-  // let [errors, setErrors] = useState({})
-  // let [busy, setBusy] = useState(false)
+
   async function onChange(event) {
     let {target: {type, name, value, checked}} = event
     value = type == "checkbox" ? checked : value
