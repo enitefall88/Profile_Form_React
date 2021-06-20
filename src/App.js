@@ -15,9 +15,9 @@ let [inputs, setInputs] = useState({
 
 export default function EditProfileForm() {
   let {inputs, errors, busy, setInputs, setErrors, setBusy} = useEditProfile({
-     username: "john-snow",
-     email: "john-snow@gmail.com",
-     about: "...",
+     username: "john",
+     email: "john@gmail.com",
+     about: "Bio info",
    })
 
   async function onChange(event) {
