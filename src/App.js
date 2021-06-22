@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import * as Y from "yup"
 
 function useEditProfile(profile) {
