@@ -28,6 +28,7 @@ export default function EditProfileForm() {
       .then(_ => ({[name]: ""}))
       .catch(convert)
     setInputs(inputs => ({...inputs, [name]: value}))
+    console.log(inputs)
     setErrors({...errors, ...inputErrors})
   }
   function onSubmit(afterSubmit) {
